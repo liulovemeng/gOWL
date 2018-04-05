@@ -1,0 +1,672 @@
+<http://uob.iodt.ibm.com/univ-bench-dl.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl> <http://www.w3.org/2000/01/rdf-schema#label> "Univ-benchmark Ontology" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl> <http://www.w3.org/2002/07/owl#versionInfo> "benchmark-lite.owl, ver June 1st, 2005" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "An university ontology for benchmark tests. Language Level: OWL-DL SHION(D).\n   This ontology are built on basis of Lehigh Benchmark Ontology,\n   http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl" .
+<http://www.w3.org/2001/XMLSchema#string> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#enrollIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#enrollIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Department> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#enrollIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#isStudentOf> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasAlumnus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasAlumnus> <http://www.w3.org/2000/01/rdf-schema#label> "has as an alumnus" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasAlumnus> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasAlumnus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#University> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasDegreeFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasDegreeFrom> <http://www.w3.org/2000/01/rdf-schema#label> "has a degree from" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasDegreeFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasDegreeFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#University> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasDegreeFrom> <http://www.w3.org/2002/07/owl#inverseOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#hasAlumnus> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasDoctoralDegreeFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasDoctoralDegreeFrom> <http://www.w3.org/2000/01/rdf-schema#label> "has a doctoral degree from" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasDoctoralDegreeFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasDoctoralDegreeFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#University> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasDoctoralDegreeFrom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#hasDegreeFrom> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasMajor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasMajor> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#AcademicSubject> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasMasterDegreeFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasMasterDegreeFrom> <http://www.w3.org/2000/01/rdf-schema#label> "has a masters degree from" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasMasterDegreeFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasMasterDegreeFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#University> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasMasterDegreeFrom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#hasDegreeFrom> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasMember> <http://www.w3.org/2000/01/rdf-schema#label> "has as a member" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasMember> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Organization> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasMember> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasMember> <http://www.w3.org/2002/07/owl#inverseOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#isMemberOf> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasSameHomeTownWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasSameHomeTownWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasSameHomeTownWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasSameHomeTownWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasSameHomeTownWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasStudent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasStudent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Organization> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasStudent> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Student> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasStudent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#hasMember> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasUndergraduateDegreeFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasUndergraduateDegreeFrom> <http://www.w3.org/2000/01/rdf-schema#label> "has an undergraduate degree from" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasUndergraduateDegreeFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasUndergraduateDegreeFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#University> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#hasUndergraduateDegreeFrom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#hasDegreeFrom> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isAdvisedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isAdvisedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is being advised by" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isAdvisedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isAdvisedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Professor> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isAffiliateOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isAffiliateOf> <http://www.w3.org/2000/01/rdf-schema#label> "is affiliated with" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isAffiliateOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Organization> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isAffiliateOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isAffiliatedOrganizationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isAffiliatedOrganizationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is affiliated with" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isAffiliatedOrganizationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Organization> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isAffiliatedOrganizationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Organization> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isCrazyAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isCrazyAbout> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#like> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isFriendOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isFriendOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isFriendOf> <http://www.w3.org/2000/01/rdf-schema#label> "is a friend of" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isFriendOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isFriendOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isHeadOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isHeadOf> <http://www.w3.org/2000/01/rdf-schema#label> "is the head of" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isHeadOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#worksFor> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isMemberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isMemberOf> <http://www.w3.org/2000/01/rdf-schema#label> "member of" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isStudentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isStudentOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Organization> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isStudentOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Student> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isStudentOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#hasStudent> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isStudentOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#isMemberOf> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isTaughtBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isTaughtBy> <http://www.w3.org/2000/01/rdf-schema#label> "is taught by" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isTaughtBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Course> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isTaughtBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Faculty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#isTaughtBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#teacherOf> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#like> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#like> <http://www.w3.org/2000/01/rdf-schema#label> "like" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#like> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#love> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#love> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#like> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#listedCourse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#listedCourse> <http://www.w3.org/2000/01/rdf-schema#label> "lists as a course" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#listedCourse> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Course> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#listedCourse> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Schedule> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#love> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#love> <http://www.w3.org/2000/01/rdf-schema#label> "same property of liike" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#orgPublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#orgPublication> <http://www.w3.org/2000/01/rdf-schema#label> "publishes" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#orgPublication> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Organization> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#orgPublication> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Publication> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#publicationAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#publicationAuthor> <http://www.w3.org/2000/01/rdf-schema#label> "was written by" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#publicationAuthor> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#publicationAuthor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Publication> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#publicationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#publicationDate> <http://www.w3.org/2000/01/rdf-schema#label> "was written on" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#publicationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Publication> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#publicationResearch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#publicationResearch> <http://www.w3.org/2000/01/rdf-schema#label> "is about" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#publicationResearch> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Publication> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#publicationResearch> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Research> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#researchProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#researchProject> <http://www.w3.org/2000/01/rdf-schema#label> "has as a research project" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#researchProject> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Research> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#researchProject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#ResearchGroup> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#softwareDocumentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#softwareDocumentation> <http://www.w3.org/2000/01/rdf-schema#label> "is documented in" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#softwareDocumentation> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Publication> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#softwareDocumentation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Software> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#softwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#softwareVersion> <http://www.w3.org/2000/01/rdf-schema#label> "is version" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#softwareVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Software> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#subOrganizationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#subOrganizationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#subOrganizationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is part of" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#subOrganizationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Organization> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#subOrganizationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Organization> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#takesCourse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#takesCourse> <http://www.w3.org/2000/01/rdf-schema#label> "is taking" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#takesCourse> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Student> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#teacherOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#teacherOf> <http://www.w3.org/2000/01/rdf-schema#label> "teaches" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#teacherOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Course> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#teacherOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Faculty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#teachingAssistantOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#teachingAssistantOf> <http://www.w3.org/2000/01/rdf-schema#label> "is a teaching assistant for" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#teachingAssistantOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Course> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#teachingAssistantOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#TeachingAssistant> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#tenured> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#tenured> <http://www.w3.org/2000/01/rdf-schema#label> "is tenured:" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#tenured> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Professor> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#worksFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#worksFor> <http://www.w3.org/2000/01/rdf-schema#label> "Works For" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#worksFor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#isMemberOf> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#age> <http://www.w3.org/2000/01/rdf-schema#label> "is age" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#age> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#emailAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#emailAddress> <http://www.w3.org/2000/01/rdf-schema#label> "can be reached at" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#emailAddress> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#firstName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#firstName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#firstName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#lastName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#lastName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#lastName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#officeNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#officeNumber> <http://www.w3.org/2000/01/rdf-schema#label> "office room No." .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#researchInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#researchInterest> <http://www.w3.org/2000/01/rdf-schema#label> "is researching" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#telephone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#telephone> <http://www.w3.org/2000/01/rdf-schema#label> "telephone number" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#telephone> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#title> <http://www.w3.org/2000/01/rdf-schema#label> "title" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#title> <http://www.w3.org/2000/01/rdf-schema#domain> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#AcademicSubject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#AcademicSubject> <http://www.w3.org/2000/01/rdf-schema#label> "Academic Subject" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Article> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Article> <http://www.w3.org/2000/01/rdf-schema#label> "article" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Article> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Publication> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#AssistantProfessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#AssistantProfessor> <http://www.w3.org/2000/01/rdf-schema#label> "assistant professor" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#AssistantProfessor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Professor> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#AssociateProfessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#AssociateProfessor> <http://www.w3.org/2000/01/rdf-schema#label> "associate professor" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#AssociateProfessor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Professor> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#BaseballFan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#BaseballFan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#BaseballFan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx3 .
+_:node1bth2g0tjx3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx3 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#isCrazyAbout> .
+_:node1bth2g0tjx3 <http://www.w3.org/2002/07/owl#hasValue> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Baseball> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#BaseballLover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#BaseballLover> <http://www.w3.org/2000/01/rdf-schema#label> "people who like baseball" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#BaseballLover> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#BaseballLover> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx7 .
+_:node1bth2g0tjx7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx7 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#like> .
+_:node1bth2g0tjx7 <http://www.w3.org/2002/07/owl#hasValue> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Baseball> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#BasketBallFan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#BasketBallFan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#BasketBallFan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx11 .
+_:node1bth2g0tjx11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx11 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#isCrazyAbout> .
+_:node1bth2g0tjx11 <http://www.w3.org/2002/07/owl#hasValue> <http://uob.iodt.ibm.com/univ-bench-dl.owl#BasketBall> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#BasketBallLover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#BasketBallLover> <http://www.w3.org/2000/01/rdf-schema#label> "people who like basket ball" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#BasketBallLover> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#BasketBallLover> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx15 .
+_:node1bth2g0tjx15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx15 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#like> .
+_:node1bth2g0tjx15 <http://www.w3.org/2002/07/owl#hasValue> <http://uob.iodt.ibm.com/univ-bench-dl.owl#BasketBall> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Book> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Book> <http://www.w3.org/2000/01/rdf-schema#label> "book" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Book> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Publication> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Chair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Chair> <http://www.w3.org/2000/01/rdf-schema#label> "chair" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Chair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Chair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx19 .
+_:node1bth2g0tjx19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx19 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#isHeadOf> .
+_:node1bth2g0tjx19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Chair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Professor> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#ClericalStaff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#ClericalStaff> <http://www.w3.org/2000/01/rdf-schema#label> "clerical staff worker" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#ClericalStaff> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#SupportingStaff> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#College> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#College> <http://www.w3.org/2000/01/rdf-schema#label> "school" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#College> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Organization> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#ConferencePaper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#ConferencePaper> <http://www.w3.org/2000/01/rdf-schema#label> "conference paper" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#ConferencePaper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Article> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Course> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Course> <http://www.w3.org/2000/01/rdf-schema#label> "teaching course" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Course> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Work> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Dean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Dean> <http://www.w3.org/2000/01/rdf-schema#label> "dean" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Dean> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx22 .
+_:node1bth2g0tjx22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx22 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#isHeadOf> .
+_:node1bth2g0tjx22 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Dean> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Professor> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Department> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Department> <http://www.w3.org/2000/01/rdf-schema#label> "university department" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Department> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Organization> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Director> <http://www.w3.org/2000/01/rdf-schema#label> "director" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx26 .
+_:node1bth2g0tjx26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx26 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#isHeadOf> .
+_:node1bth2g0tjx26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Employee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Employee> <http://www.w3.org/2000/01/rdf-schema#label> "Employee" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Employee> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Employee> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx30 .
+_:node1bth2g0tjx30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx30 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#worksFor> .
+_:node1bth2g0tjx30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Engineering> <http://www.w3.org/2000/01/rdf-schema#label> "Engineering" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Engineering> <http://www.w3.org/2002/07/owl#equivalentClass> _:node1bth2g0tjx32 .
+_:node1bth2g0tjx32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:node1bth2g0tjx32 <http://www.w3.org/2002/07/owl#oneOf> _:node1bth2g0tjx33 .
+_:node1bth2g0tjx33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Electrical_Engineering> .
+_:node1bth2g0tjx33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx34 .
+_:node1bth2g0tjx34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Mechanical_Engineering> .
+_:node1bth2g0tjx34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx35 .
+_:node1bth2g0tjx35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Materical_Science_Engineering> .
+_:node1bth2g0tjx35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx36 .
+_:node1bth2g0tjx36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Civil_Engineering> .
+_:node1bth2g0tjx36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx37 .
+_:node1bth2g0tjx37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Industry_Engineering> .
+_:node1bth2g0tjx37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx38 .
+_:node1bth2g0tjx38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Aeronautical_Engineering> .
+_:node1bth2g0tjx38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx39 .
+_:node1bth2g0tjx39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Biomedical_Engineering> .
+_:node1bth2g0tjx39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx40 .
+_:node1bth2g0tjx40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Petroleuml_Engineering> .
+_:node1bth2g0tjx40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx41 .
+_:node1bth2g0tjx41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Chemical_Engineering> .
+_:node1bth2g0tjx41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx42 .
+_:node1bth2g0tjx42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Computer_Engineering> .
+_:node1bth2g0tjx42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Engineering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#AcademicSubject> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Faculty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Faculty> <http://www.w3.org/2000/01/rdf-schema#label> "faculty member" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Faculty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Employee> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#FineArts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#FineArts> <http://www.w3.org/2002/07/owl#equivalentClass> _:node1bth2g0tjx43 .
+_:node1bth2g0tjx43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:node1bth2g0tjx43 <http://www.w3.org/2002/07/owl#oneOf> _:node1bth2g0tjx44 .
+_:node1bth2g0tjx44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Asian_Arts> .
+_:node1bth2g0tjx44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx45 .
+_:node1bth2g0tjx45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Media_Arts_And_ciences> .
+_:node1bth2g0tjx45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx46 .
+_:node1bth2g0tjx46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Musics> .
+_:node1bth2g0tjx46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx47 .
+_:node1bth2g0tjx47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Drama> .
+_:node1bth2g0tjx47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx48 .
+_:node1bth2g0tjx48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Latin_Arts> .
+_:node1bth2g0tjx48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx49 .
+_:node1bth2g0tjx49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Modern_Arts> .
+_:node1bth2g0tjx49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx50 .
+_:node1bth2g0tjx50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Architecture> .
+_:node1bth2g0tjx50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx51 .
+_:node1bth2g0tjx51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Performing_Arts> .
+_:node1bth2g0tjx51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx52 .
+_:node1bth2g0tjx52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Theatre_and_Dance> .
+_:node1bth2g0tjx52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx53 .
+_:node1bth2g0tjx53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Medieval_Arts> .
+_:node1bth2g0tjx53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#FineArts> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#AcademicSubject> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#FullProfessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#FullProfessor> <http://www.w3.org/2000/01/rdf-schema#label> "full professor" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#FullProfessor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Professor> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#GraduateCourse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#GraduateCourse> <http://www.w3.org/2000/01/rdf-schema#label> "Graduate Level Courses" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#GraduateCourse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Course> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#GraduateStudent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#GraduateStudent> <http://www.w3.org/2000/01/rdf-schema#label> "graduate student" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#GraduateStudent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx55 .
+_:node1bth2g0tjx55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx55 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#takesCourse> .
+_:node1bth2g0tjx55 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://uob.iodt.ibm.com/univ-bench-dl.owl#GraduateCourse> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#GraduateStudent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx57 .
+_:node1bth2g0tjx57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx57 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#takesCourse> .
+_:node1bth2g0tjx57 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#HumanitiesAndSocial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#HumanitiesAndSocial> <http://www.w3.org/2000/01/rdf-schema#label> "HumanitiesAndSocial" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#HumanitiesAndSocial> <http://www.w3.org/2002/07/owl#equivalentClass> _:node1bth2g0tjx59 .
+_:node1bth2g0tjx59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:node1bth2g0tjx59 <http://www.w3.org/2002/07/owl#oneOf> _:node1bth2g0tjx60 .
+_:node1bth2g0tjx60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Modern_Languages> .
+_:node1bth2g0tjx60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx61 .
+_:node1bth2g0tjx61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Philosophy> .
+_:node1bth2g0tjx61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx62 .
+_:node1bth2g0tjx62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Humanities> .
+_:node1bth2g0tjx62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx63 .
+_:node1bth2g0tjx63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#English> .
+_:node1bth2g0tjx63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx64 .
+_:node1bth2g0tjx64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Economics> .
+_:node1bth2g0tjx64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx65 .
+_:node1bth2g0tjx65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#History> .
+_:node1bth2g0tjx65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx66 .
+_:node1bth2g0tjx66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Anthropology> .
+_:node1bth2g0tjx66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx67 .
+_:node1bth2g0tjx67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Religions> .
+_:node1bth2g0tjx67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx68 .
+_:node1bth2g0tjx68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Linguistics> .
+_:node1bth2g0tjx68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx69 .
+_:node1bth2g0tjx69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Psychology> .
+_:node1bth2g0tjx69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#HumanitiesAndSocial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#AcademicSubject> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Insterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Institute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Institute> <http://www.w3.org/2000/01/rdf-schema#label> "institute" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Institute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Organization> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#JournalArticle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#JournalArticle> <http://www.w3.org/2000/01/rdf-schema#label> "journal article" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#JournalArticle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Article> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Lecturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Lecturer> <http://www.w3.org/2000/01/rdf-schema#label> "lecturer" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Lecturer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Faculty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#LeisureStudent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#LeisureStudent> <http://www.w3.org/2000/01/rdf-schema#label> "students who have plenty of leisure time" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#LeisureStudent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx70 .
+_:node1bth2g0tjx70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx70 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#takesCourse> .
+_:node1bth2g0tjx70 <http://www.w3.org/2002/07/owl#maxCardinality> "3"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Man> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Man> <http://www.w3.org/2002/07/owl#disjointWith> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Woman> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Manual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Manual> <http://www.w3.org/2000/01/rdf-schema#label> "manual" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Manual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Publication> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Music> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Music> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Insterest> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#NonScienceStudent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#NonScienceStudent> <http://www.w3.org/2000/01/rdf-schema#label> "student whose major is not science" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#NonScienceStudent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Student> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#NonScienceStudent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx73 .
+_:node1bth2g0tjx73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:node1bth2g0tjx73 <http://www.w3.org/2002/07/owl#complementOf> _:node1bth2g0tjx75 .
+_:node1bth2g0tjx75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx75 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#hasMajor> .
+_:node1bth2g0tjx75 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "organization" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#PeopleWithHobby> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#PeopleWithHobby> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#PeopleWithHobby> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx78 .
+_:node1bth2g0tjx78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx78 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#like> .
+_:node1bth2g0tjx78 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#PeopleWithManyHobbies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#PeopleWithManyHobbies> <http://www.w3.org/2000/01/rdf-schema#label> "People who have at least 3 hobbies" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#PeopleWithManyHobbies> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx80 .
+_:node1bth2g0tjx80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx80 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#like> .
+_:node1bth2g0tjx80 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> <http://www.w3.org/2000/01/rdf-schema#label> "person" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> <http://www.w3.org/2002/07/owl#equivalentClass> _:node1bth2g0tjx81 .
+_:node1bth2g0tjx81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:node1bth2g0tjx81 <http://www.w3.org/2002/07/owl#unionOf> _:node1bth2g0tjx82 .
+_:node1bth2g0tjx82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Man> .
+_:node1bth2g0tjx82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx83 .
+_:node1bth2g0tjx83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Woman> .
+_:node1bth2g0tjx83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#PostDoc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#PostDoc> <http://www.w3.org/2000/01/rdf-schema#label> "post doctorate" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#PostDoc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Faculty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Professor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Professor> <http://www.w3.org/2000/01/rdf-schema#label> "professor" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Professor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Faculty> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Program> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Program> <http://www.w3.org/2000/01/rdf-schema#label> "program" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Program> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Organization> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Publication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Publication> <http://www.w3.org/2000/01/rdf-schema#label> "publication" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Research> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Research> <http://www.w3.org/2000/01/rdf-schema#label> "research work" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Research> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Work> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#ResearchAssistant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#ResearchAssistant> <http://www.w3.org/2000/01/rdf-schema#label> "university research assistant" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#ResearchAssistant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#ResearchAssistant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx84 .
+_:node1bth2g0tjx84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx84 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#worksFor> .
+_:node1bth2g0tjx84 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#ResearchGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#ResearchGroup> <http://www.w3.org/2000/01/rdf-schema#label> "research group" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#ResearchGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Organization> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Schedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Schedule> <http://www.w3.org/2000/01/rdf-schema#label> "schedule" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Science> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Science> <http://www.w3.org/2000/01/rdf-schema#label> "Science" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Science> <http://www.w3.org/2002/07/owl#equivalentClass> _:node1bth2g0tjx85 .
+_:node1bth2g0tjx85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:node1bth2g0tjx85 <http://www.w3.org/2002/07/owl#oneOf> _:node1bth2g0tjx86 .
+_:node1bth2g0tjx86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Chemistry> .
+_:node1bth2g0tjx86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx87 .
+_:node1bth2g0tjx87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Computer_Science> .
+_:node1bth2g0tjx87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx88 .
+_:node1bth2g0tjx88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Geosciences> .
+_:node1bth2g0tjx88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx89 .
+_:node1bth2g0tjx89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Materials_Science> .
+_:node1bth2g0tjx89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx90 .
+_:node1bth2g0tjx90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Statistics> .
+_:node1bth2g0tjx90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx91 .
+_:node1bth2g0tjx91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Physics> .
+_:node1bth2g0tjx91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx92 .
+_:node1bth2g0tjx92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Astronomy> .
+_:node1bth2g0tjx92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx93 .
+_:node1bth2g0tjx93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Marine_Science> .
+_:node1bth2g0tjx93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx94 .
+_:node1bth2g0tjx94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Biology> .
+_:node1bth2g0tjx94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node1bth2g0tjx95 .
+_:node1bth2g0tjx95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Mathematics> .
+_:node1bth2g0tjx95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Science> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#AcademicSubject> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#ScienceStudent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#ScienceStudent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Student> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#ScienceStudent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx98 .
+_:node1bth2g0tjx98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx98 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#hasMajor> .
+_:node1bth2g0tjx98 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Software> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Software> <http://www.w3.org/2000/01/rdf-schema#label> "software program" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Software> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Publication> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Specification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Specification> <http://www.w3.org/2000/01/rdf-schema#label> "published specification" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Specification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Publication> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Sports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Sports> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Insterest> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#SportsFan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#SportsFan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#SportsFan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx102 .
+_:node1bth2g0tjx102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx102 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#isCrazyAbout> .
+_:node1bth2g0tjx102 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#SportsLover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#SportsLover> <http://www.w3.org/2000/01/rdf-schema#label> "People who like Sports" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#SportsLover> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#SportsLover> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx106 .
+_:node1bth2g0tjx106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx106 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#like> .
+_:node1bth2g0tjx106 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Student> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Student> <http://www.w3.org/2000/01/rdf-schema#label> "student" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Student> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Student> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx110 .
+_:node1bth2g0tjx110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx110 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#isStudentOf> .
+_:node1bth2g0tjx110 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#SupportingStaff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#SupportingStaff> <http://www.w3.org/2000/01/rdf-schema#label> "administrative staff worker" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#SupportingStaff> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Employee> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#SwimmingFan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#SwimmingFan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#SwimmingFan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx114 .
+_:node1bth2g0tjx114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx114 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#isCrazyAbout> .
+_:node1bth2g0tjx114 <http://www.w3.org/2002/07/owl#hasValue> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Swimming> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#SwimmingLover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#SwimmingLover> <http://www.w3.org/2000/01/rdf-schema#label> "people who like swimming" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#SwimmingLover> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#SwimmingLover> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx118 .
+_:node1bth2g0tjx118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx118 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#like> .
+_:node1bth2g0tjx118 <http://www.w3.org/2002/07/owl#hasValue> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Swimming> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#SystemsStaff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#SystemsStaff> <http://www.w3.org/2000/01/rdf-schema#label> "systems staff worker" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#SystemsStaff> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#SupportingStaff> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#TeachingAssistant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#TeachingAssistant> <http://www.w3.org/2000/01/rdf-schema#label> "university teaching assistant" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#TeachingAssistant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#TeachingAssistant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx122 .
+_:node1bth2g0tjx122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx122 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#teachingAssistantOf> .
+_:node1bth2g0tjx122 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#TechnicalReport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#TechnicalReport> <http://www.w3.org/2000/01/rdf-schema#label> "technical report" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#TechnicalReport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Article> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#TennisFan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#TennisFan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Person> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#TennisFan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx126 .
+_:node1bth2g0tjx126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx126 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#isCrazyAbout> .
+_:node1bth2g0tjx126 <http://www.w3.org/2002/07/owl#hasValue> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Tennis> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#UndergraduateStudent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#UndergraduateStudent> <http://www.w3.org/2000/01/rdf-schema#label> "undergraduate student" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#UndergraduateStudent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Student> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#University> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#University> <http://www.w3.org/2000/01/rdf-schema#label> "university" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#University> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Organization> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#UnofficialPublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#UnofficialPublication> <http://www.w3.org/2000/01/rdf-schema#label> "unnoficial publication" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#UnofficialPublication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Publication> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#VisitingProfessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#VisitingProfessor> <http://www.w3.org/2000/01/rdf-schema#label> "visiting professor" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#VisitingProfessor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Professor> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Woman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#WomanCollege> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#WomanCollege> <http://www.w3.org/2000/01/rdf-schema#label> "a college who only take female undergraduate students" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#WomanCollege> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#College> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#WomanCollege> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx130 .
+_:node1bth2g0tjx130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx130 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#hasStudent> .
+_:node1bth2g0tjx130 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://uob.iodt.ibm.com/univ-bench-dl.owl#UndergraduateStudent> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#WomanCollege> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:node1bth2g0tjx132 .
+_:node1bth2g0tjx132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:node1bth2g0tjx132 <http://www.w3.org/2002/07/owl#onProperty> <http://uob.iodt.ibm.com/univ-bench-dl.owl#hasStudent> .
+_:node1bth2g0tjx132 <http://www.w3.org/2002/07/owl#allValuesFrom> _:node1bth2g0tjx134 .
+_:node1bth2g0tjx134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:node1bth2g0tjx134 <http://www.w3.org/2002/07/owl#complementOf> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Man> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Work> <http://www.w3.org/2000/01/rdf-schema#label> "Work" .
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Aeronautical_Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Aeronautical_Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#AmericanFootball> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#AmericanFootball> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Sports> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#AmericanFootball> <http://www.w3.org/2000/01/rdf-schema#label> "AmericanFootball" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Anthropology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Anthropology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Architecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Architecture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Asian_Arts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Asian_Arts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Astronomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Astronomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Baseball> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Baseball> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Sports> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Baseball> <http://www.w3.org/2000/01/rdf-schema#label> "Baseball" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#BasketBall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#BasketBall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Sports> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#BasketBall> <http://www.w3.org/2000/01/rdf-schema#label> "BasketBall" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Biology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Biology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Biomedical_Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Biomedical_Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Chemical_Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Chemical_Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Chemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Chemistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Civil_Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Civil_Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Classic_Music> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Classic_Music> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Music> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Computer_Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Computer_Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Computer_Science> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Computer_Science> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Drama> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Drama> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Economics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Economics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Electrical_Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Electrical_Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#English> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#English> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Geosciences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Geosciences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#History> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#History> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Humanities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Humanities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Industry_Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Industry_Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Kickboxing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Kickboxing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Sports> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Kickboxing> <http://www.w3.org/2000/01/rdf-schema#label> "Kickboxing" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Latin_Arts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Latin_Arts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Linguistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Linguistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Marine_Science> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Marine_Science> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Materials_Science> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Materials_Science> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Materical_Science_Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Materical_Science_Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Mathematics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Mathematics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Mechanical_Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Mechanical_Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Media_Arts_And_ciences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Media_Arts_And_ciences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Medieval_Arts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Medieval_Arts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Modern_Arts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Modern_Arts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Modern_Languages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Modern_Languages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Movie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Movie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Insterest> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Musics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Musics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#PC_Game> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#PC_Game> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Insterest> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Painting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Painting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Insterest> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Performing_Arts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Performing_Arts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Petroleuml_Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Petroleuml_Engineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Philosophy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Philosophy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Physics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Physics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Pop_Music> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Pop_Music> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Music> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Psychology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Psychology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Reading> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Reading> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Insterest> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Religions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Religions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Rock_and_Roll> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Rock_and_Roll> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Music> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Shopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Shopping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Insterest> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Soccer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Soccer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Sports> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Soccer> <http://www.w3.org/2000/01/rdf-schema#label> "Soccer" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#StampCollecting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#StampCollecting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Insterest> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Statistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Statistics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Swimming> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Swimming> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Sports> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Swimming> <http://www.w3.org/2000/01/rdf-schema#label> "Swimming" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Tennis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Tennis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Sports> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Tennis> <http://www.w3.org/2000/01/rdf-schema#label> "Tennis" .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Theatre_and_Dance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Theatre_and_Dance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Travelling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Travelling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Insterest> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Video_Game> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://uob.iodt.ibm.com/univ-bench-dl.owl#Video_Game> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://uob.iodt.ibm.com/univ-bench-dl.owl#Insterest> .
