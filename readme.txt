@@ -9,3 +9,7 @@ for example:
 java -jar gOWL-1.jar lubm-ontology.nt LUBM1.nt lubm-rewrite.nt
 
 Note that all files are triples in ".nt" format.
+
+SPARQL Query Engine：
+RDF3X:  https://github.com/gh-rdf3x/gh-rdf3x
+gStore: https://github.com/Caesar11/gStore.git
