@@ -13,3 +13,7 @@ Note that all files are triples in ".nt" format.
 SPARQL Query Engine：
 RDF3X:  https://github.com/gh-rdf3x/gh-rdf3x
 gStore: https://github.com/Caesar11/gStore.git
+
+Compared Engine：
+PAGOdA: https://www.cs.ox.ac.uk/isg/tools/PAGOdA/
+Ontop: https://github.com/ontop/vig
